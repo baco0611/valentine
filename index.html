@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
     <title>Valentine</title>
     <style>
         * {
@@ -19,7 +22,7 @@
         }
 
         :root {
-            --primary-color: #CCFFFF;
+            --primary-color: #ff7871;
         }
 
         .app {
@@ -30,7 +33,7 @@
         }
 
         .contain {
-            background-color: #fff;
+            background-color: #ffeae3;
             margin: auto;
             padding: 16px 24px;
             border-radius: 20px;
@@ -44,12 +47,13 @@
         .title {
             font-size: 2.8rem;
             text-align: center;
+            font-weight: 600;
         }
 
         .heart {
             font-size: 10rem;
             transition: all linear 0.2s;
-            color: red;
+            color: #ff645c;
             animation: Zoom 0.4s alternate infinite;
         }
 
@@ -73,10 +77,11 @@
             border-radius: 10px;
             font-weight: 600;
             transition: all linear 0.2s;
+            font-family: Nunito;
         }
 
         .option-btn:hover {
-            background-color: var(--primary-color);
+            background-color: #ff645c;
             color: #fff;
             text-shadow: 1px 1px #000;
         }
@@ -85,15 +90,15 @@
             position: fixed;
             top: 0;
             right: 0;
-            background-color: #fff;
+            /* background-color: #fff; */
             padding: 16px 24px;
-            border-radius: 10px;
+            /* border-radius: 10px; */
             overflow: hidden;
             margin-top: 16px;
             min-height: 60px;
             opacity: 0;
             display: none;
-            box-shadow: 0 0 2px 0;
+            /* box-shadow: 0 0 2px 0; */
         }
 
         .message.error {
@@ -157,16 +162,21 @@
     <div class="app">
         <div class="alert">
             <div class="message error">
-                <h1 class="heading-mess">Bấm nhầm nút rồi, chọn nút kiaaaaaaaaa -^^-</h1>
+                <!-- <h1 class="heading-mess">Bấm nhầm nút rồi, chọn nút kiaaaaaaaaa -^^-</h1> -->
+                <font face="Nunito" style="font-size: 26px; text-shadow: #000;">Bấm nhầm nút rồi, chọn nút kiaaaaaaaaa -^^-</font>
             </div>
             <div class="message yes">
-                <h1 class="heading-mess">Ơ mần ngừi iu cho rùi ^^</h1>
+                <!-- <h1 class="heading-mess">Ơ mần ngừi iu cho rùi ^^</h1> -->
+                <font face="Nunito" style="font-size: 26px; text-shadow: #000;">Ơ mần ngừi iu cho rùi ^^-</font>
             </div>
         </div>
         <div class="contain">
-            <h1 class="title">
+            <!-- <h1 class="title">
                 Sắp Valentine rồi <br> Cậu làm người yêu tớ nhé ^^
-            </h1>
+            </h1> -->
+            <font class="title" face="Nunito">
+                Sắp Valentine rồi <br> Cậu làm người yêu tớ nhé ^^
+            </font>
             <div class="heart">
                 <i class="fas fa-heart"></i>
             </div>
